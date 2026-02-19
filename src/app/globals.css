@@ -18,11 +18,11 @@
 
   --spacing-hero-inset: clamp(12px, 2vw, 30px);
 
-  --size-category-icon: clamp(48px, 10vw, 156px);
-  --size-category-h: clamp(48px, 10vw, 156px);
+  --size-category-icon: clamp(72px, 10vw, 156px);
+  --size-category-h: clamp(72px, 10vw, 156px);
 
   --text-hero-title: clamp(32px, 4.3vw, 62px);
-  --text-category-label: clamp(15px, 2.2vw, 32px);
+  --text-category-label: clamp(16px, 2.2vw, 32px);
 
   --font-sans: "Inter", sans-serif;
 }
@@ -42,7 +42,6 @@ body {
   filter: blur(50px);
 }
 
-/* Скрываем фото на ультраширoких экранах (>= 2800px) */
 @media (min-width: 2800px) {
   .hero-photo-col {
     display: none;

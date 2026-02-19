@@ -122,8 +122,8 @@ export default function HeroSection() {
 	const [menuOpen, setMenuOpen] = useState(false)
 
 	return (
-		<section className="p-hero-inset flex h-screen min-h-[600px] flex-col bg-white lg:min-h-[700px]">
-			<div className="rounded-card from-hero-to to-hero-from relative flex flex-1 flex-col overflow-hidden bg-linear-[237deg]">
+		<section className="lg:p-hero-inset flex flex-col bg-white lg:h-svh lg:min-h-[700px]">
+			<div className="rounded-card from-hero-to to-hero-from relative flex flex-1 flex-col overflow-hidden bg-linear-[237deg] max-lg:min-h-svh max-lg:rounded-none">
 				<Image
 					src="/images/binary.png"
 					alt=""
@@ -192,7 +192,7 @@ export default function HeroSection() {
 				</nav>
 
 				<div className="relative flex flex-1 flex-col gap-8 px-4 pt-8 pb-0 md:flex-row md:px-[36px] md:pt-10 lg:pt-16">
-					<div className="relative z-20 flex flex-1 flex-col justify-around gap-6 pb-8 md:pb-10 lg:w-max lg:justify-between lg:gap-0 lg:pb-16">
+					<div className="relative z-20 flex flex-1 flex-col justify-around gap-6 pb-8 md:pb-10 lg:w-max lg:gap-0 lg:pb-16">
 						<h1
 							className="mb-6 bg-linear-to-tl from-white/60 via-white to-white/60 bg-clip-text text-center leading-tight font-semibold tracking-tight text-transparent md:mb-10 md:text-left lg:mb-12 lg:leading-none lg:text-nowrap"
 							style={{ fontSize: 'var(--text-hero-title)' }}
@@ -237,7 +237,7 @@ export default function HeroSection() {
 								alt="Команда программы"
 								width={795}
 								height={530}
-								className="h-full w-auto max-w-none"
+								className="z-50 h-full w-auto max-w-none"
 								priority
 							/>
 							{badges.map(({ text, className }) => (
@@ -256,7 +256,7 @@ export default function HeroSection() {
 					alt=""
 					width={1572}
 					height={237}
-					className="pointer-events-none absolute -bottom-1 select-none"
+					className="pointer-events-none absolute -bottom-1 w-screen select-none 2xl:right-0"
 					style={{ zIndex: 15 }}
 					aria-hidden="true"
 				/>

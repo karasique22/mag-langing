@@ -1,12 +1,12 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
 
-const isProd = process.env.NODE_ENV === 'production';
+const isProd = process.env.NODE_ENV === 'production'
 
 const nextConfig: NextConfig = {
-  output: 'export',
-  reactCompiler: true,
-  basePath: isProd ? '/mag-langing' : '',
-  images: { unoptimized: true },
-};
+	reactCompiler: true,
+	basePath: isProd ? '/mag-landing' : '',
+	images: { unoptimized: true }
+}
 
-export default nextConfig;
+export default nextConfig
+1

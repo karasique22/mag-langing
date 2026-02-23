@@ -60,7 +60,7 @@ const jsonLd = {
 			url: SITE_URL,
 			description:
 				'Российский государственный университет им. А.Н. Косыгина (Технологии. Дизайн. Искусство)',
-			sameAs: ['https://www.kosygin-rgu.ru']
+			sameAs: ['https://rguk.ru/']
 		},
 		{
 			'@type': 'Course',

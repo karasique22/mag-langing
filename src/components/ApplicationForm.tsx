@@ -1,16 +1,13 @@
 'use client'
 
-import { Controller, useForm, useWatch } from 'react-hook-form'
-import { IMaskInput } from 'react-imask'
-import { zodResolver } from '@hookform/resolvers/zod'
-import { z } from 'zod'
-
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
+import { zodResolver } from '@hookform/resolvers/zod'
+import { Controller, useForm, useWatch } from 'react-hook-form'
+import { IMaskInput } from 'react-imask'
+import { z } from 'zod'
 
-// URL бэкенд-прокси для отправки заявок.
-// Замени на адрес своего сервера (например, GitLab-прокси).
 const API_URL = process.env.NEXT_PUBLIC_API_URL ?? ''
 
 const MAX_MESSAGE_LENGTH = 500
@@ -87,9 +84,7 @@ export function ApplicationForm({ onSuccess, onError }: ApplicationFormProps) {
 						className="rounded-xl border-gray-200 px-4 py-3 focus-visible:border-blue-500 focus-visible:ring-blue-500/20"
 					/>
 					{errors.name && (
-						<p className="text-destructive text-xs">
-							{errors.name.message}
-						</p>
+						<p className="text-destructive text-xs">{errors.name.message}</p>
 					)}
 				</div>
 
@@ -104,15 +99,13 @@ export function ApplicationForm({ onSuccess, onError }: ApplicationFormProps) {
 								placeholder="+7 (999) 999-99-99"
 								inputRef={field.ref}
 								onAccept={value => field.onChange(value)}
-								className="placeholder:text-muted-foreground aria-invalid:border-destructive w-full rounded-xl border border-gray-200 bg-transparent px-4 py-3 text-sm outline-none transition-colors focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
+								className="placeholder:text-muted-foreground aria-invalid:border-destructive w-full rounded-xl border border-gray-200 bg-transparent px-4 py-3 text-sm transition-colors outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
 								aria-invalid={!!errors.phone}
 							/>
 						)}
 					/>
 					{errors.phone && (
-						<p className="text-destructive text-xs">
-							{errors.phone.message}
-						</p>
+						<p className="text-destructive text-xs">{errors.phone.message}</p>
 					)}
 				</div>
 
@@ -125,9 +118,7 @@ export function ApplicationForm({ onSuccess, onError }: ApplicationFormProps) {
 						className="rounded-xl border-gray-200 px-4 py-3 focus-visible:border-blue-500 focus-visible:ring-blue-500/20"
 					/>
 					{errors.email && (
-						<p className="text-destructive text-xs">
-							{errors.email.message}
-						</p>
+						<p className="text-destructive text-xs">{errors.email.message}</p>
 					)}
 				</div>
 

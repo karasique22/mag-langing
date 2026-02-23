@@ -38,8 +38,8 @@ export function HeroContent({ onCtaClick }: HeroContentProps) {
 								Магистерская программа
 							</p>
 							<h1 className="text-hero-title bg-linear-to-tl from-white/60 via-white to-white/60 bg-clip-text pb-1 text-center leading-tight font-semibold tracking-tight text-transparent antialiased md:mb-10 lg:mb-8 lg:text-left lg:leading-none 2xl:mb-12">
-								Устойчивые продукты онлайн-образования: ИИ-технологии,
-								финансы, управление
+								Устойчивые продукты онлайн-образования: ИИ-технологии, финансы,
+								управление
 							</h1>
 						</div>
 
